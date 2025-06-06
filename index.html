@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow">
+    <title>Tipang's Day</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Autoplay music -->
+    <audio id="bgMusic" src="song/kenangan-manis.mp3" autoplay loop></audio>
+
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <img
+          src="gambar/bipang.jpg"
+          alt="Foto Ulang Tahun"
+          class="header-img"
+        />
+        <div class="header-text">
+          <h1>Barakallahu fii umrikk🎉</h1>
+          <p>
+            Haii Independent Woman!! wauuu 18 tahun mogaa sehat selalu yakk,
+            dari awal kenal, kamu selalu bilang kalo "Aku Independent Women".
+            Kecerian dan semangatmu aku ngaku kalah sii yaa, tapi gatauuu kadang
+            disampingmu aku ngerasa gamau kalah jugaaa. Semoga di umur yang 18
+            tahun dan seterusnya, allah swt selalu permudah jalanmu. gapapa
+            independen juga kadang butuh ngeluh kokk, jangan berlarut larut yaa,
+            gass hadapi dengan senyuman, hihihi ikuzooo.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slider Memori -->
+      <div class="slider">
+        <button class="slider-btn" onclick="prevImg()">&#8592;</button>
+        <img
+          src="gambar/duo.jpg"
+          alt="Memori"
+          class="slider-img"
+          id="sliderImage"
+        />
+        <button class="slider-btn" onclick="nextImg()">&#8594;</button>
+      </div>
+
+      <!-- Kotak Pertanyaan -->
+      <div class="question-box">
+        <div>
+          Apakah kamu bahagia hari ini? <br /><br />
+          <button class="answer-btn" onclick="showAnswer('Y')">Y</button>
+          <button class="answer-btn" onclick="showAnswer('N')">N</button>
+        </div>
+        <div
+          id="answerResult"
+          style="margin-top: 16px; font-weight: bold; color: #2367a8"
+        ></div>
+      </div>
+<!-- Amplop -->
+ <div class="amplop-wrapper">
+<div class="amplop" id="bukaSurat">
+    💌 Klik untuk membuka surat
+  </div>
+
+  <div class="popup" id="popupSurat">
+    <div class="popup-content">
+      <span class="close-btn" id="tutupSurat">&times;</span>
+      <h2>Haii Fang</h2>
+      <p>Huhh, dah lama yaa ga ngomong sama kamu..., kadang aku khawatir saat kamu ndak bales chat, yaa lama lama tapi aku ngerti kamu bukan anak kecil yang harus aku selalu jagain. Kamu buat aku percaya kamu Independent..., ya aku belajar mempercayai ituu. Dan yaa sekarang kita fokus benahi diri masing-masing. Kita tidak bisa menebak jalan cerita selanjutnya. Kurangnya dari cerita kita sebeelum-sebleumnya maafkanlah..., yaa sekarang kita harus ditempa dengan jalan yg berbeda. Janji yaaa, Tipang harus bahagia untuk Bunda, Bapak, orang" yang baik sama Tipang, dan Squiddos. Kapanpun kita ketemu lagi aku selalu bahagia dan menantikannya..., <br>Salam Hangat, Cumiyaw</p>
+    </div>
+  </div>
+ </div>
+      
+
+    <script src="script.js"></script>
+  </body>
+</html>
