@@ -1,3 +1,29 @@
+// confetti
+function randomColor() {
+  const colors = ["#ff0", "#f0f", "#0ff", "#f00", "#0f0", "#00f"];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
+function createConfetti() {
+  const confetti = document.createElement("div");
+  confetti.classList.add("confetti");
+  confetti.style.left = Math.random() * window.innerWidth + "px";
+  confetti.style.backgroundColor = randomColor();
+  confetti.style.animationDuration = Math.random() * 2 + 2 + "s"; // antara 2-4 detik
+  document.getElementById("confetti-container").appendChild(confetti);
+
+  // Hapus confetti setelah selesai animasi
+  setTimeout(() => {
+    confetti.remove();
+  }, 4000);
+}
+
+function startConfetti() {
+  for (let i = 0; i < 100; i++) {
+    setTimeout(createConfetti, i * 30);
+  }
+}
+
 // Slider gambar memori
 const sliderImgs = ["gambar/old.jpg", "gambar/rawrr.jpg", "gambar/cumi.jpg"];
 let sliderIdx = 0;

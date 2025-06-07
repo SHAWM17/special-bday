@@ -33,6 +33,49 @@ body {
   color: #fff;
   font-size: 2em;
 }
+
+/* confetti */
+.confetti-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.confetti-wrap button {
+  color: #fff;
+  background-color: #0b2341;
+  border-radius: 8px;
+}
+
+#confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  opacity: 0.8;
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
 .slider {
   margin: 36px 0;
   display: flex;
@@ -145,12 +188,12 @@ body {
     text-align: center;
   }
   .header-img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
   }
   .slider-img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
   .amplop {
     font-size: 18px;
