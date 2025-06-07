@@ -25,7 +25,13 @@ function startConfetti() {
 }
 
 // Slider gambar memori
-const sliderImgs = ["gambar/old.jpg", "gambar/rawrr.jpg", "gambar/cumi.jpg"];
+const sliderImgs = [
+  "gambar/old.jpg",
+  "gambar/spion.jpg",
+  "gambar/muncak.jpg",
+  "gambar/rawrr.jpg",
+  "gambar/cumi.jpg",
+];
 let sliderIdx = 0;
 function showSliderImg() {
   document.getElementById("sliderImage").src = sliderImgs[sliderIdx];
@@ -68,10 +74,7 @@ window.addEventListener("click", (e) => {
   }
 });
 
-// Autoplay music di beberapa browser harus interaksi user
-window.addEventListener("load", function () {
+function startMusic() {
   const music = document.getElementById("bgMusic");
-  music.volume = 0.25;
-  // Untuk autoplay, coba play paksa (di beberapa browser tetap perlu interaksi user)
-  music.play().catch(() => {});
-});
+  music.play();
+}
